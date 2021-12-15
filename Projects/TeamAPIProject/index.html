@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Team API Project using HTML, CSS, JavaScript and Axios" />
+  <!-- Names of Team members working on Project -->
+  <meta name="author" content="Jordan Roberts, William Vest, Sonia Silverman, John Thompson" />
+  <!-- Link to Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Team 7 Ron Swanson API</title>
+</head>
+
+<body>
+  <!-- NAVBAR SETTINGS -->
+
+  <nav class="navbar navbar-light " style="background-color: #FEF9D9;">
+    <div class="container-fluid">
+      <a id="navbar" class="navbar-brand fs-1 margin" href="#">
+        <!-- Image source - https://thenounproject.com/term/lumberjack/4215298/ -->
+        <img src="images/noun_lumberjack_4215298.png" alt="" width="130" height="124"
+          class="d-inline-block align-text-center">
+        Felling In Love!
+      </a>
+    </div>
+  </nav>
+
+  <!-- PICTURE AND STATISTICS SETTINGS -->
+
+  <div id="background" class="container">
+    <section id="pic-stats" class="containerONE">
+      <div>
+        <img id="img-ron" src="images/image.png" alt="Ron-Swanson-Lumberjack" width="300">
+      </div>
+      <form action="" id="stats-form">
+        <fieldset>
+          <legend>RON SWANSON'S STATISTICS</legend>
+
+          <Label>Eye Color</Label>
+          <label id="label2">Blue</label><br>
+
+          <Label>Hair Color</Label>
+          <label id="label2">Brown</label> <br>
+
+          <Label>Height</Label>
+          <label id="label2">5' 11"</label> <br>
+
+          <Label>Weight</Label>
+          <label id="label2">201</label> <br>
+
+          <Label>Birthday</Label>
+          <label id="label2"><span class="spanOne">None of your damn business</span></label><br>
+
+          <Label>Zodiac Sign</Label>
+          <label id="label2">What the hell is this?</label><br>
+
+          <Label id="label-Quote">Favorite thing to say?</Label><br>
+          <label id="quoteONE">I don't have a single favorite thing to say..</label><br>
+        </fieldset>
+      </form>
+    </section>
+
+
+    <!-- BIO AND QUOTE BOX SETTINGS -->
+
+    <section id="bio">
+      <div class="containerBIO">
+
+        <article id="aboutMe" class="main-col">
+          <h1 class="page-title">A Little About Me...</h1>
+          <p> Let me start by saying I am being forced against my will to participate in this post apocalyptic mating
+            call called online dating. But my captor, Leslie, says I owe her about a 1,000 favors and apparently me
+            dating is somehow her business she imagines.</p>
+
+          <p class="light">So be it. Where to begin? She says I should say something about myself. I already know about
+            myself so that seems pointless. You should tell me about you, like what can you cook, and how many points
+            was
+            the largest buck you’ve killed?
+            How many bacon wrapped shrimp can you eat in one sitting?
+            Mmmmm, bacon wrapped shrimp. Almost as good as a side of beef, rare, with a dozen eggs and a tall glass of
+            16 year old Lagavulin scotch to wash it down.</p>
+        </article>
+
+        <aside class="sidebar">
+          <div id="myWords" class="light">
+            <h3>To know me, is to know my words.</h3>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- BOTTOM THREE-CARD SECTION SETTINGS -->
+
+    <section>
+      <div id="longboxes" class="container">
+        <div id="card-one" class="card" style="width: 21rem; height: 30rem;">
+          <img src="images/placeholderRecipe.jpg" class="card-img-top" alt="Recipe Cards">
+          <div class="card-body">
+            <p class="card-text">As a food enthusiast, I enjoy to spread my love for steak, bacon, and eggs. That being said, I shun vegans and all things green or healthy. At the bottom of this page is the recipe for one of my favorite meals.</p>
+          </div>
+        </div>
+
+        <div id="card-two" class="card" style="width: 21rem; height: 30rem;;">
+          <img src="images/placeholderWood.jpg" class="card-img-top" alt=" Picture of Cut Wood">
+          <div class="card-body">
+            <p class="card-text">Woodworking. Like any man I know how to work with wood. Like I always say, better to
+              scribe a line with a scratch awl once than have to pull out a double edged flush cut razorsaw.</p>
+          </div>
+        </div>
+
+        <div id="card-three" class="card" style="width: 21rem; height: 30rem;;">
+          <img src="images/placeholderWhiskey.jpg" class="card-img-top" alt="Picture of steak and whiskey">
+          <div class="card-body">
+            <p class="card-text">I love everything that is bourbon, scotch, and whiskey. My personal favorite is Lagavulin. It is very precious to me and I like to call it: "Nectar of the gods."</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- RECIPE CARD SECTION -->
+  <div class="cardR">
+    <div class="card__inner">
+      <div class="card__face card__face--front">
+        <div class="card__header">
+          <div class="card__body">
+            <h5>Directions</h5>
+            <p>Using a thin-cut bacon, take three slices and braid them into one thicker piece of bacon.
+            </p>
+            <p>
+              Do this 7 more times, until you have enough bacon to create a wreath large enough to encircle a dozen
+              fried eggs.
+            </p>
+            <p>
+              Painstakingly join sections of bacon together so they appear to be seamless, creating one long braid of
+              bacon to be formed into a wreath on a large baking sheet. (Good luck with this.)
+            </p>
+            <p>
+              Bake bacon in 450 degree oven until done, 25-30 minutes. Cook one dozen eggs (sunny side up) in melted
+              butter in an iron skillet – just like the skillets our forefathers used.
+            </p>
+            <p>
+              Slide eggs effortlessly onto a large round platter and surround with bacon wreath. Salt heavily and serve
+              immediately with extra toast and butter.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__face card__face--back">
+        <img src="images/bacon n eggs.jpeg" alt="" class="pic">
+        <div class="card__content">
+          <div class="card__body">
+            <h4>Bacon N Eggs</h4>
+          </div>
+          <h6>Ingredients</h6>
+
+          <ul>
+            <li>2 pounds bacon</li>
+            <li>1 dozen eggs</li>
+            <li>3 tablespoons butter</li>
+            <li>salt and pepper</li>
+          </ul>
+
+          <h6>Servings</h6>
+
+          <p> 1: if it’s for me, 6-8 for those with less hearty appetites.</p>
+
+          <h6>Prep Time</h6>
+
+          <p> 25 minutes to cook the bacon in the oven, 6 hours to braid the bacon into a wreath, but well worth it</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER SECTION -->
+
+  <footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: #fef9d9">
+      <p id="footer">© 2020 Copyright: Felling In Love, LLC<br>
+      From The Minds Of Roberts, Silverman, Thompson, & Vest<br>
+    <a href="https://youtube.com/playlist?list=PLJ0r0SmfRDC92PPJ4zFOA99HED4B9r_tq">Inspired Partially by The Smooth Sounds & Life of Lumberjacks</a> </p>
+    </div>
+  </footer>
+
+  <!-- LINK TO AXIOS -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- LINK TO JS FILE -->
+  <script src="script.js"></script>
+  <!-- LINK TO JS BOOTSTRAP BUNDLE -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+/* Google Font - IM Fell English SC Designed by Igino Marini  */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+/* VARIABLES FOR RECIPE CARD SECTION */
+:root{
+    --primary: #CE7D00;
+    --secondary:#00541A;
+    --dark: #212121;
+    --light: #F3F3F3;
+}
+
+/* NAVBAR SETTINGS */
+
+#navbar, #footer {
+    font-family: 'IM Fell English SC', serif;
+    color: #00541A;
+    margin: auto;
+}
+
+/* BODY */
+
+body {
+    background-color: #00541A;
+}
+
+/* PICTURE AND STATISTICS SETTINGS */
+
+#img-ron {
+    margin-top: 30px;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+legend {
+    color: #00541A;
+    text-align: center;
+    font-family: 'IM Fell English SC', serif;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.containerONE {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;      
+}
+
+label {
+    height: 22px;
+    text-align: center;
+    width: 150px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+  }
+  
+  input, #label2 {
+    height: 22px;
+    width: 300px;
+    margin-left: 5px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: blanchedalmond;
+  }
+
+#label-Quote {
+    width: fit-content;
+}
+
+#quoteONE {
+    height: 25px;
+    width: 47vw;
+    margin-left: 10px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: blanchedalmond;
+}
+
+form { 
+    background-color: #BD9354;
+    max-height: 500px;
+    max-width: 700px;
+    grid-column-start: 2;
+    grid-column-end: 6; 
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin-top: 40px;
+    margin-left: 100px;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+.spanOne {
+    background-color: black;
+    color: black;
+}
+
+/* BIO AND QUOTE BOX SETTINGS */
+
+h1, h3 {
+    color: #00541A;
+    font-family: 'IM Fell English SC', serif;
+    font-weight: bolder;
+}
+
+#bio {
+    background-color: #CE7D00;
+    font-family: 'Roboto Mono', monospace;
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+#bio .containerBIO {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 50px;
+}
+
+#bio .main-col {
+    color: black;
+    background-color: #BD9354;
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#bio .sidebar {
+    margin-top: 10px;
+}
+
+aside {
+    background-color: #BD9354;
+    color: black;
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 5px 10px 10px 10px;
+}
+
+/* BOTTOM THREE-CARD SECTION SETTINGS */
+
+#longboxes {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 10px 100px 0px;
+    border: 5px solid black;
+    border-radius: 25px;
+    background-color: #CE7D00;
+    padding: 25px;
+}
+
+.quotes {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+    padding: 5px;
+}
+
+.aboutMeQuote {
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* RECIPE CARD SECTION */
+
+.cardR {
+    margin: 100px 0px 100px 325px;
+    width: 800px;
+    height: 600px;
+    perspective: 1000px;
+}
+
+.card__inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card__inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 16px 3px rgba(0,0,0,0.2);
+    padding: 15px;
+}
+
+.card__face--front {
+    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__face--front h4 {
+    color: #00541A;
+    font-size: 32px;
+
+}
+
+.card__face--back {
+    background-color: var(--primary);
+    transform: rotateY(180deg);
+    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    font-size: 19px;
+}
+
+.card__content {
+    width: 100%;
+    height: 100%;
+}
+
+.card__header {
+    position: relative;
+    padding: 30px 30px 40px;
+}
+
+.card__header :after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    z-index: -1;
+    border-radius: 0 0 50% 0;
+    background-image: linear-gradient( bottom left, var(--primary) 10%, var(--secondary) 115%);
+}
+
+.pic {
+    display: block;
+    width: 128px;
+    height: 128px; 
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background-color: azure;
+    border: 5px solid #00541A;
+    object-fit: cover;
+
+}
+
+.card__header h5{
+    color: #00541A;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.card__body h4{
+    color: #00541A;
+    font-size: 24px;
+    font-weight: 600;    
+}
+.card__face--back h6 {
+    color: #00541A;
+}
+
+.card__body p {
+ color: var(--dark);
+ font-size: 18px;
+ line-height: 1.2;
+
+}
